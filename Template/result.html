@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1>Predicted Class: {{ result.class_name }}</h1>
+    <hr>
+    <div>
+      <img src="{{ result.image_path }}" class="img-rounded" width="400" height="200">
+    </div>
+    <a href="{{ url_for('index') }}" class="btn btn-default">Back</a>
+  </div>
+
+{% endblock %}
